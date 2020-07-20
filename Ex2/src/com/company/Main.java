@@ -10,10 +10,10 @@ public class Main {
         ArrayList<NoteBook> noteBookArrayList = new ArrayList<>();
         noteBookArrayList.add(mac);
         noteBookArrayList.add(pix);
-        method(noteBookArrayList.get(0));
-        mac.methodMacBook();
-        method(noteBookArrayList.get(1));
-        pix.methodPixelBook();
+
+        for(NoteBook iterator:noteBookArrayList){
+            method(iterator);
+        }
     }
 
     public static void method(NoteBook noteBook){
