@@ -12,10 +12,15 @@ public class Basket {
     }
 
     public void addCategories(Category category) {
+        boolean bool = false;
         for (Category i:categories){
             if (i.equals(category)){
-                this.categories.add(category);
+                bool = true;
+                break;
             }
+        }
+        if(!bool){
+            this.categories.add(category);
         }
     }
 
@@ -28,10 +33,15 @@ public class Basket {
     }
 
     public void addDevice(Device device) {
+        boolean bool = false;
         for (Device i:devices){
             if (i.equals(device)){
-                this.devices.add(device);
+                bool = true;
+                break;
             }
+        }
+        if(!bool){
+            this.devices.add(device);
         }
     }
 }
