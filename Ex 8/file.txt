@@ -1,0 +1,5 @@
+Jobs, Steve, Designer: 1000;
+McDowell, Edward, Author: 1500;
+Welch, Brianna, Clerk: 100;
+Hunt, Judith, Letter: 300;
+Preston, Mary, Doctor: 1400.
