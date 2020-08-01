@@ -1,0 +1,41 @@
+Start> Version: 0.0.1> Date: Сб авг 01 23:47:49 MSK 2020
+
+Start> Version: 0.0.2> Date: Вс авг 02 01:32:29 MSK 2020
+
+Start> Version: 0.0.2> Date: Вс авг 02 01:32:52 MSK 2020
+
+Start> Version: 0.0.3> Date: Вс авг 02 01:37:51 MSK 2020
+Successful: false
+Start> Version: 0.0.4> Date: Вс авг 02 01:40:20 MSK 2020
+Start> Version: 0.0.5> Date: Вс авг 02 01:42:20 MSK 2020
+Start> Version: 0.0.5> Date: Вс авг 02 01:43:27 MSK 2020
+1) Message: EmailChecker/Code:2; Parameter: Incorrect email
+Start> Version: 0.0.5> Date: Вс авг 02 01:43:59 MSK 2020
+Start> Version: 0.0.5> Date: Вс авг 02 01:45:09 MSK 2020
+Start> Version: 0.0.5> Date: Вс авг 02 01:46:54 MSK 2020
+Successful: false
+Start> Version: 0.0.5> Date: Вс авг 02 01:49:39 MSK 2020
+1) Message: EmailChecker/Code:2; Parameter: Incorrect email
+Start> Version: 0.0.6> Date: Вс авг 02 01:50:06 MSK 2020
+Successful: false
+Start> Version: 0.0.6> Date: Вс авг 02 01:51:39 MSK 2020
+Successful: false
+Start> Version: 0.0.6> Date: Вс авг 02 01:52:31 MSK 2020
+Successful: false
+Start> Version: 0.0.7> Date: Вс авг 02 01:53:56 MSK 2020
+Start> Version: 0.0.7> Date: Вс авг 02 01:55:26 MSK 2020
+Successful: false
+Start> Version: 0.0.8> Date: Вс авг 02 02:00:49 MSK 2020
+1) Message: EmailChecker/Code:3; Parameter: Incorrect email
+Successful: false
+Start> Version: 0.0.9> Date: Вс авг 02 02:02:50 MSK 2020
+Successful: true
+Start> Version: 0.1.0> Date: Вс авг 02 02:05:33 MSK 2020
+Successful: true
+Start> Version: 0.1.0> Date: Вс авг 02 02:08:22 MSK 2020
+1) Message: MobileChecker/Code 2; Parameter: Incorrect mobile number1111111111111
+2) Message: HomePhoneChecker/Code:1; Parameter: Too small string767
+3) Message: EmailChecker/Code:1; Parameter: Incorrect email78
+Successful: false
+Start> Version: 0.1.1> Date: Вс авг 02 02:09:49 MSK 2020
+Successful: true
