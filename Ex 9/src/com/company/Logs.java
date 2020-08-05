@@ -8,7 +8,7 @@ import java.util.Date;
 public class Logs {
 
     private static int strNumber = 1;
-    private static final String VERSION = "0.1.1";
+    private static final String VERSION = "0.1.2";
     private static File file = new File("log.txt");
 
     public static void start(){

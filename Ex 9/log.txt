@@ -39,3 +39,13 @@ Start> Version: 0.1.0> Date: Вс авг 02 02:08:22 MSK 2020
 Successful: false
 Start> Version: 0.1.1> Date: Вс авг 02 02:09:49 MSK 2020
 Successful: true
+Start> Version: 0.1.2> Date: Ср авг 05 17:54:21 MSK 2020
+1) Message: MobileChecker/Code 2; Parameter: Incorrect mobile number: +376297372026
+Successful: true
+Start> Version: 0.1.2> Date: Ср авг 05 17:56:12 MSK 2020
+1) Message: MobileChecker/Code Test; Parameter: Incorrect mobile number: +376297372026
+2) Message: HomePhoneChecker/Code:3; Parameter: Incorrect home phone number: +375297372026
+Successful: true
+Start> Version: 0.1.2> Date: Ср авг 05 17:59:54 MSK 2020
+1) Message: HomePhoneChecker/Code:1; Parameter: Incorrect home phone number: +37544666444
+Successful: true
