@@ -12,7 +12,7 @@ public class Main {
         stringBuffer.append(scanner.nextLine());
         symbolsCheck(stringBuffer, "*", "/");
         SymbolsReplace.symbReplace(stringBuffer);
-        PalindromeChecker.palCheck(stringBuffer);;
+        PalindromeChecker.palCheck(stringBuffer.toString());;
         Reverse.reverse(stringBuffer);
         Division.div();
     }

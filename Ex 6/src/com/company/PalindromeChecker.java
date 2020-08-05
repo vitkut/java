@@ -2,15 +2,23 @@ package com.company;
 
 public class PalindromeChecker {
 
-    public static void palCheck(StringBuffer stringBuffer){
+    public static void palCheck(String inputString){
         System.out.println("<Palindrome check>");
-        int lenght = stringBuffer.length();
+        inputString = inputString.toLowerCase();
+        StringBuffer stringBuffer = new StringBuffer(inputString);
+        for (int i = 0; i < stringBuffer.length(); i++){
+            if(stringBuffer.charAt(i) == ' '){
+                stringBuffer.deleteCharAt(i);
+                i--;
+            }
+        }
+        int length = stringBuffer.length();
         try {
-            if(lenght == 0){
+            if(length == 0){
                 throw new WrongSymbolException("Empty string");
             }
-            for (int i = 0; i < lenght/2; i++){
-                if(stringBuffer.charAt(i) != stringBuffer.charAt(lenght-i-1)){
+            for (int i = 0; i < length/2; i++){
+                if(stringBuffer.charAt(i) != stringBuffer.charAt(length-i-1)){
                     throw new WrongSymbolException("Not a palindrome");
                 }
             }
