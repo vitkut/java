@@ -11,7 +11,7 @@ public class Report {
     public static void generateReport(ArrayList<Person> workers){
         sortReport(workers);
         for (Person i:workers){
-            System.out.printf("%-30s %-5.2f%n", i.getFullname(), i.getSalary());
+            System.out.printf("%-30s %20.2f%n", i.getFullname(), i.getSalary());
         }
 
 
