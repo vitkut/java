@@ -24,10 +24,11 @@ public class Main {
         for (String i:strings){
             System.out.println(i);
         }
+
         System.out.println("\nBubble sort:\n");
-        BubbleSort.sort(strings);
+        //BubbleSort.sort(strings);
         System.out.println("\nSelect sort:\n");
-        SelectSort.sort(strings);
+        //SelectSort.sort(strings);
         System.out.println("\nQuick sort\n");
         QuickSort.input(strings);
 

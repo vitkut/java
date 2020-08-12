@@ -11,7 +11,7 @@ public class QuickSort {
         long workingTime = System.currentTimeMillis();
         ArrayList<String> stringArrayList = new ArrayList<>(Arrays.asList(strings));
 
-        sort(stringArrayList);
+        stringArrayList = sort(stringArrayList);
         for(String i:stringArrayList){
             System.out.println(i);
         }
@@ -20,9 +20,9 @@ public class QuickSort {
         System.out.println("Operations: [" + countOfOperations + "]");
     }
 
-    private static void sort(ArrayList<String> strings){
+    private static ArrayList<String> sort(ArrayList<String> strings){
         if(strings.size() <= 1){
-            return;
+            return strings;
         }
         String supportElement = strings.get(strings.size()/2);
         ArrayList<String> isBigger = new ArrayList<>();
@@ -38,8 +38,13 @@ public class QuickSort {
                 countOfOperations++;
             }
         }
-        sort(isBigger);
-        sort(isLower);
+        isBigger = sort(isBigger);
+        isLower = sort(isLower);
+        isLower.add(supportElement);
+        for(String i:isBigger){
+            isLower.add(i);
+        }
+        return isLower;
     }
 
 

@@ -5,16 +5,21 @@ public class SelectSort {
     public  static void sort(String[] strings){
         long workingTime = System.currentTimeMillis();
         StringBuilder minString = new StringBuilder();
+        StringBuilder buffString = new StringBuilder();
         int countOfOperations = 0;
         for (int i = 0; i < strings.length; i++){
             minString.replace(0, minString.length(), strings[i]);
             for(int j = i; j < strings.length; j++){
                 if(minString.length() > strings[j].length()){
                     minString.replace(0, minString.length(), strings[j]);
+                    buffString.append(strings[j]);
+                    strings[j] = strings[i];
+                    strings[i] = buffString.toString();
+                    j = i;
+                    buffString.delete(0, buffString.length());
                 }
                 countOfOperations++;
             }
-            strings[i] = minString.toString();
         }
 
         for(String i:strings){
