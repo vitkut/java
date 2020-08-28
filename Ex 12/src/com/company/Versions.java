@@ -11,10 +11,23 @@ public class Versions {
     public static void start(String string){
         sort(string, string.length());
         Collections.sort(arrayList);
+        cleaning();
         for(String str:arrayList){
             System.out.println(str);
         }
         System.out.println("Count: "+count);
+    }
+
+    private static void cleaning(){
+        for(int i = 0; i < arrayList.size(); i++){
+            for(int j = i+1; j < arrayList.size(); j++){
+                if(arrayList.get(i).equals(arrayList.get(j))){
+                    arrayList.remove(j);
+                    j = i;
+                    count--;
+                }
+            }
+        }
     }
 
     private static void sort(String string, int num){

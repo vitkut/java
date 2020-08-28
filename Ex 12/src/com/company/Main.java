@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        String string = "12345";
+        String string = "abbadd";
         Versions.start(string);
     }
 
